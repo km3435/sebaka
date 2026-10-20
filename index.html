@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>حلول السباكة | Plumbing Solutions</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f8fc;--card:#fff;--ink:#14263d;--mute:#5d6f86;--blue:#1d5fa6;--blue2:#0f3f77;--org:#f28c1b;--line:#dce6f1;--soft:#e8f1fb;--bar:#0f3f77;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1624;--card:#142238;--ink:#eaf1fa;--mute:#9db0c8;--blue:#5aa0e8;--blue2:#1d5fa6;--line:#243a58;--soft:#182b45;--bar:#0a2a52}}
+:root[data-theme="dark"]{--bg:#0c1624;--card:#142238;--ink:#eaf1fa;--mute:#9db0c8;--blue:#5aa0e8;--blue2:#1d5fa6;--line:#243a58;--soft:#182b45;--bar:#0a2a52}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--bg);color:var(--ink);font-family:Tajawal,Tahoma,sans-serif;line-height:1.7;font-size:16px}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--org);outline-offset:2px}
+.wrap{max-width:1180px;margin:auto;padding:0 20px}
+.top{background:var(--bar);color:#fff;font-size:14px}
+.top .wrap{display:flex;justify-content:space-between;gap:12px;padding:8px 20px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--blue2);line-height:1.2}
+.logo small{display:block;font-size:12px;color:var(--mute);font-weight:500}
+.logo i{font-style:normal;background:var(--blue);color:#fff;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:22px}
+nav{display:flex;gap:6px;align-items:center}
+nav a{padding:8px 13px;border-radius:8px;font-weight:500;font-size:15px}
+nav a:hover{background:var(--soft)}
+.btn{display:inline-block;border:0;cursor:pointer;font:inherit;font-weight:700;background:var(--org);color:#1c1200;padding:11px 24px;border-radius:10px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.b{background:var(--blue);color:#fff}
+.btn.w{width:100%}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:8px;width:42px;height:42px;font-size:20px;color:var(--ink);cursor:pointer}
+.hero{background:linear-gradient(120deg,var(--blue2),#2a7bd1 60%,#43a0e8);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:70px 20px}
+.hero h1{font-size:clamp(30px,5vw,50px);line-height:1.3;font-weight:800;margin-bottom:14px}
+.hero p{font-size:18px;opacity:.92;max-width:520px;margin-bottom:26px}
+.stats{display:flex;gap:28px;margin-top:34px;flex-wrap:wrap}
+.stats b{font-size:30px;display:block;color:#ffc27a}
+.stats span{font-size:14px;opacity:.9}
+.pipe{aspect-ratio:1;max-width:380px;margin:auto;width:100%;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffffff33,#ffffff0d);display:grid;place-items:center;border:2px dashed #ffffff55;font-size:140px;animation:pulse 5s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(1.04)}}
+section{padding:64px 0}
+h2{font-size:30px;font-weight:800;text-align:center;margin-bottom:8px;color:var(--blue2)}
+:root[data-theme="dark"] h2{color:var(--ink)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2{color:var(--ink)}}
+.sub{text-align:center;color:var(--mute);margin-bottom:36px}
+.icons{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px}
+.ic{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 12px;text-align:center;font-weight:700;cursor:pointer;transition:.2s}
+.ic:hover{border-color:var(--blue);transform:translateY(-4px)}
+.ic span{display:grid;place-items:center;width:58px;height:58px;margin:0 auto 10px;background:var(--soft);border-radius:16px;font-size:28px}
+.band{background:var(--card);border-block:1px solid var(--line)}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.card .im{height:150px;display:grid;place-items:center;font-size:62px;background:linear-gradient(135deg,var(--c1),var(--c2))}
+.card div.t{padding:18px}
+.card h3{font-size:19px;margin-bottom:6px}
+.card p{color:var(--mute);font-size:15px}
+.book{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.bk{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;text-align:center}
+.bk .e{font-size:34px}
+.bk h3{font-size:17px;margin:6px 0}
+.bk small{display:block;color:var(--mute);margin-bottom:14px}
+.bk small b{color:#1a8a4a}
+.rev{max-width:760px;margin:auto;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px 28px;min-height:210px}
+.rev .av{width:62px;height:62px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;margin:0 auto 10px;font-size:26px;font-weight:800}
+.rev .st{color:var(--org);letter-spacing:3px}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:18px}
+.dots button{width:11px;height:11px;border-radius:50%;border:0;background:var(--line);cursor:pointer}
+.dots button.on{background:var(--org)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px}
+.box.dk{background:var(--blue2);color:#fff;border:0}
+.box h3{font-size:24px;margin-bottom:6px}
+.chk{list-style:none;padding:0;margin:14px 0 0}
+.chk li::before{content:"✔";color:var(--org);margin-inline-end:8px}
+.chk li{padding:4px 0}
+label{display:block;font-weight:700;font-size:14px;margin:12px 0 4px}
+input,select,textarea{width:100%;font:inherit;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
+.err{color:#e5484d;font-size:13px;min-height:18px}
+.box.dk .err{color:#ffb4b6}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px;max-width:800px;margin-inline:auto}
+summary{cursor:pointer;font-weight:700}
+details p{color:var(--mute);margin-top:8px}
+footer{background:var(--bar);color:#d6e4f5;padding:50px 0 20px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+footer h4{color:#fff;margin-bottom:10px}
+footer a{display:block;padding:3px 0;opacity:.85}
+footer a:hover{opacity:1;color:#ffc27a}
+.copy{border-top:1px solid #ffffff22;margin-top:28px;padding-top:16px;text-align:center;font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.pay span{background:#fff;color:#1a1f36;font-weight:800;font-size:12px;padding:3px 9px;border-radius:5px;margin-inline-start:6px}
+.i{width:1.15em;height:1.15em;fill:currentColor;vertical-align:-.2em;flex:none}
+.btn .i{margin-inline-end:4px}
+.wab{background:#25d366;color:#fff}
+.fab{position:fixed;inset-inline-start:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:12px;z-index:30}
+.fab a{position:relative;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 8px 20px #0004;transition:transform .2s}
+.fab a:hover{transform:scale(1.08)}
+.fab .i{width:30px;height:30px}
+.fab .f-wa{background:#25d366}
+.fab .f-ph{background:var(--blue2)}
+.fab .f-wa::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;animation:ring 2.4s ease-out infinite}
+@keyframes ring{to{transform:scale(1.55);opacity:0}}
+.fab a span{position:absolute;inset-inline-start:68px;white-space:nowrap;background:var(--card);color:var(--ink);font-size:13px;font-weight:700;padding:5px 11px;border-radius:8px;box-shadow:0 4px 12px #0003;opacity:0;pointer-events:none;transition:.2s}
+.fab a:hover span,.fab a:focus-visible span{opacity:1}
+dialog{border:0;border-radius:20px;padding:28px;max-width:420px;width:92%;background:var(--card);color:var(--ink)}
+dialog::backdrop{background:#0008}
+.toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%) translateY(30px);background:#1a8a4a;color:#fff;padding:12px 22px;border-radius:12px;opacity:0;pointer-events:none;transition:.3s;z-index:50;font-weight:700}
+.toast.show{opacity:1;transform:translateX(-50%)}
+@media(max-width:860px){
+.hero .wrap,.two,footer .wrap{grid-template-columns:1fr}
+.pipe{max-width:220px;font-size:90px}
+nav{display:none;position:absolute;top:70px;inset-inline:0;background:var(--card);flex-direction:column;padding:12px;border-bottom:1px solid var(--line)}
+nav.open{display:flex}
+.burger{display:block}
+header .btn.hd{display:none}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+<!-- Google Ads tag: replace AW-XXXXXXXXXX with your Conversion ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());
+gtag('config','AW-XXXXXXXXXX');
+</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></symbol><symbol id="ph" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></symbol><symbol id="pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></symbol></svg>
+<div class="top"><div class="wrap"><span><svg class="i"><use href="#ph"/></svg> خدمة طوارئ 24 ساعة: <a href="tel:+966567563473" dir="ltr">056 756 3473</a></span><span><svg class="i"><use href="#pin"/></svg> نخدم جميع أحياء جدة</span></div></div>
+<header><div class="wrap">
+<a href="#home" class="logo"><i>🔧</i><span>حلول السباكة<small>Plumbing Solutions</small></span></a>
+<nav id="nav">
+<a href="#home">الرئيسية</a><a href="#services">خدماتنا</a><a href="tel:+966567563473">اتصل بنا</a><a href="#reviews">آراء العملاء</a><a href="#consult">استشارة</a><a href="#faq">أسئلة شائعة</a><a href="#contact">تواصل معنا</a>
+</nav>
+<a href="tel:+966567563473" class="btn hd"><svg class="i"><use href="#ph"/></svg><span dir="ltr">056 756 3473</span></a>
+<button class="burger" id="burger" aria-label="القائمة">☰</button>
+</div></header>
+
+<main>
+<div class="hero" id="home"><div class="wrap">
+<div>
+<h1>أفضل خدمات السباكة المنزلية</h1>
+<p>حلول متكاملة لجميع احتياجاتك: كشف تسريبات، صيانة سخانات، وتنظيف مجاري بفريق خبراء وضمان على الشغل.</p>
+<a href="tel:+966567563473" class="btn"><svg class="i"><use href="#ph"/></svg>اتصل الآن</a> <a href="https://wa.me/966567563473?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B3%D8%A8%D8%A7%D9%83%D8%A9%20%D9%81%D9%8A%20%D8%AC%D8%AF%D8%A9" class="btn wab" target="_blank" rel="noopener"><svg class="i"><use href="#wa"/></svg>واتساب</a>
+<div class="stats"><div><b data-n="12000">0</b><span>عميل سعيد</span></div><div><b data-n="15">0</b><span>سنة خبرة</span></div><div><b data-n="45">0</b><span>فني معتمد</span></div></div>
+</div>
+<div class="pipe" aria-hidden="true">🚰</div>
+</div></div>
+
+<section id="services"><div class="wrap">
+<h2>خدمات السباكة لدينا</h2><p class="sub">اختار الخدمة اللي محتاجها وإحنا نوصلك في أسرع وقت</p>
+<div class="icons" id="icons"></div>
+</div></section>
+
+<section class="band"><div class="wrap">
+<h2>مجموعة خدمات الصيانة الشاملة</h2><p class="sub">صيانة وإصلاح السباكة شاملة، تشمل كشف التسريبات وصيانة السخانات وتنظيف المجاري</p>
+<div class="grid3" id="cards"></div>
+</div></section>
+
+<section id="book"><div class="wrap">
+<h2>اطلب حسب نوع السباكة</h2><p class="sub">اختار الخدمة واتصل بنا، وفني يوصلك في أسرع وقت</p>
+<div class="book" id="bk"></div>
+</div></section>
+
+<section class="band" id="reviews"><div class="wrap">
+<h2>آراء عملائنا</h2><p class="sub">ثقتكم هي سر نجاحنا</p>
+<div class="rev" id="rev" aria-live="polite"></div><div class="dots" id="dots"></div>
+</div></section>
+
+<section id="consult"><div class="wrap two">
+<div class="box dk">
+<h3>استشارات مجانية</h3><p>حدد مشكلتك واتواصل معاك خبير سباكة بدون أي التزام.</p>
+<ul class="chk"><li>تشخيص أولي للمشكلة</li><li>تقدير مبدئي للتكلفة</li><li>نصائح لتجنب تكرار العطل</li><li>رد خلال 30 دقيقة</li></ul>
+<form class="f" novalidate data-ok="تم إرسال طلب الاستشارة، هنكلمك قريب">
+<label>الاسم<input name="n" required></label><div class="err"></div>
+<label>رقم الموبايل<input name="p" inputmode="tel" required></label><div class="err"></div>
+<label>نوع المشكلة<select name="s"></select></label>
+<button class="btn w" style="margin-top:16px">احصل على استشارتك</button>
+</form>
+</div>
+<div class="box">
+<h3>تحدث مع خبير</h3><p style="color:var(--mute)">اكتب سؤالك وهيرد عليك فني متخصص.</p>
+<form class="f" novalidate data-ok="وصلت رسالتك، هيرد عليك خبير قريباً">
+<label>الاسم<input name="n" required></label><div class="err"></div>
+<label>البريد أو الموبايل<input name="p" required></label><div class="err"></div>
+<label>رسالتك<textarea name="m" rows="3" required></textarea></label><div class="err"></div>
+<button class="btn b w" style="margin-top:12px">تحدث مع خبير</button>
+</form>
+</div>
+</div></section>
+
+<section class="band" id="faq"><div class="wrap">
+<h2>أسئلة شائعة</h2><p class="sub">إجابات سريعة لأكتر الأسئلة</p>
+<details><summary>هل في ضمان على الشغل؟</summary><p>أيوه، ضمان 6 شهور على الصيانة والتركيب وضمان الشركة المصنعة على القطع.</p></details>
+<details><summary>بتوصلوا في أد إيه؟</summary><p>في الحالات الطارئة بنوصل خلال ساعة داخل نطاق التغطية، والمواعيد العادية تتحدد حسب اختيارك.</p></details>
+<details><summary>الكشف عن التسريبات بيتم إزاي؟</summary><p>بنستخدم أجهزة كشف حديثة من غير تكسير، وبنحدد مكان التسريب بدقة قبل أي إصلاح.</p></details>
+<details><summary>إزاي أدفع؟</summary><p>كاش، بطاقات الدفع، أو تحويل بنكي بعد الانتهاء والتأكد من الشغل.</p></details>
+</div></section>
+</main>
+
+<footer id="contact"><div class="wrap">
+<div><div class="logo" style="color:#fff"><i>🔧</i><span>حلول السباكة<small style="color:#b9cde6">Plumbing Solutions</small></span></div>
+<p style="margin-top:12px">حلول السباكة المتكاملة بمعايير جودة عالية وفريق مدرب على أحدث الأساليب.</p></div>
+<div><h4>الشعبة</h4><a href="#services">الخدمات</a><a href="#book">اطلب الخدمة</a><a href="#reviews">آراء العملاء</a><a href="#faq">أسئلة شائعة</a></div>
+<div><h4>خدماتنا</h4><a href="#services">كشف التسريبات</a><a href="#services">صيانة السخانات</a><a href="#services">تنظيف المجاري</a><a href="#services">تركيب الأدوات الصحية</a></div>
+<div><h4>تواصل معنا</h4><a href="tel:+966567563473"><svg class="i"><use href="#ph"/></svg> <span dir="ltr">056 756 3473</span></a><a href="https://wa.me/966567563473" target="_blank" rel="noopener"><svg class="i"><use href="#wa"/></svg> واتساب: <span dir="ltr">056 756 3473</span></a><a href="#"><svg class="i"><use href="#pin"/></svg> جدة، المملكة العربية السعودية</a><a href="#">🕒 يومياً 24 ساعة</a></div>
+</div>
+<div class="wrap" style="display:block"><div class="copy"><span>© 2026 حلول السباكة. جميع الحقوق محفوظة.</span><span class="pay">طرق الدفع: <span>VISA</span><span>MasterCard</span><span>Cash</span></span></div></div>
+</footer>
+<div class="fab"><a class="f-wa" href="https://wa.me/966567563473" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب"><svg class="i"><use href="#wa"/></svg><span>راسلنا واتساب</span></a><a class="f-ph" href="tel:+966567563473" aria-label="اتصل بنا"><svg class="i"><use href="#ph"/></svg><span>اتصل الآن</span></a></div>
+
+<dialog id="dlg"><h3 id="dt" style="margin-bottom:8px"></h3>
+<form id="bf" novalidate data-ok="تم تأكيد طلب الحجز، هنتواصل معاك لتحديد الموعد">
+<label>الاسم<input name="n" required></label><div class="err"></div>
+<label>رقم الموبايل<input name="p" inputmode="tel" required></label><div class="err"></div>
+<label>الموعد المفضل<input type="datetime-local" name="d" required></label><div class="err"></div>
+<div style="display:flex;gap:10px;margin-top:16px"><button class="btn b" style="flex:1">تأكيد الحجز</button><button type="button" class="btn" style="background:var(--soft);color:var(--ink)" id="cx">إلغاء</button></div>
+</form></dialog>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+var S=[["🔧","إصلاح السباكة","#dbeafe","#bfdbfe"],["🛢️","تركيب الخزانات","#fde8c8","#fbd29a"],["🚿","صيانة السخانات","#d6f2e3","#aee6c7"],["🧹","تنظيف المجاري","#e5dcfb","#cdbdf6"],["🛁","تركيب الأدوات الصحية","#fbdcdc","#f6bcbc"]];
+var C=[["🛁","سباكة الحمامات","تركيب وصيانة الخلاطات والسيفونات وأدوات الحمام وإصلاح التسريبات داخل الحمام.","#cfe6ff","#9ccbff"],["🍳","سباكة المطابخ","تركيب أحواض ومواسير المطبخ وصيانة الخلاطات وفتح انسداد الأحواض.","#ffe3c2","#ffc88a"],["💧","تنظيف خزانات المياه","تعقيم وغسيل الخزانات الأرضية والعلوية بمواد آمنة.","#d2f0e3","#a4e0c4"],["🚿","صيانة السخانات","فحص وإصلاح وتركيب السخانات الكهربائية والغازية في بيتك.","#e1e8f5","#b9c8e6"],["🔍","كشف التسريبات بدون تكسير","تحديد مكان التسريب بدقة بأجهزة حرارية وصوتية.","#e6dcfa","#cbb9f2"],["🪠","فتح المجاري المسدودة","ماكينات ضغط عالي تفتح السدد وتنظف الخطوط بالكامل.","#fdd9d9","#f7b4b4"]];
+var B=[["🛠️","فحص السباكة الدوري"],["🚰","إصلاح خطوط المياه الرئيسية"],["🔧","فحص السباكة العام"],["⚙️","إصلاح وصيانة المضخات"],["🧰","تطوير وتنظيف المجاري"],["🔩","إصلاح خطوط المياه"]];
+var R=[["م","محمد السيد","خدمة ممتازة، الفني وصل في ميعاده وحل مشكلة التسريب من غير تكسير. هتعامل معاهم تاني."],["س","سارة أحمد","سخان البيت كان عطلان من أسبوع واتصلحت في ساعة. سعر عادل وشغل نضيف."],["ع","عمرو خالد","عقد صيانة لعمارتنا من سنة وكل حاجة بتتم بانتظام ومن غير مشاكل."],["ه","هبة محمود","فتحوا المجاري بسرعة وبمنتهى الاحترام والنظافة. أنصح بيهم."]];
+var $=function(s){return document.querySelector(s)};
+$("#icons").innerHTML=S.map(function(x){return '<div class="ic" tabindex="0" data-s="'+x[1]+'"><span>'+x[0]+'</span>'+x[1]+'</div>'}).join("");
+$("#cards").innerHTML=C.map(function(x){return '<article class="card"><div class="im" style="--c1:'+x[3]+';--c2:'+x[4]+'">'+x[0]+'</div><div class="t"><h3>'+x[1]+'</h3><p>'+x[2]+'</p></div></article>'}).join("");
+$("#bk").innerHTML=B.map(function(x){return '<div class="bk"><div class="e">'+x[0]+'</div><h3>'+x[1]+'</h3><small><b>●</b> متاح اليوم</small><a class="btn b w" href="tel:+966567563473"><svg class="i"><use href="#ph"/></svg>اتصل الآن</a></div>'}).join("");
+var all=S.map(function(x){return x[1]}).concat(B.map(function(x){return x[1]}));
+$("select").innerHTML=all.map(function(x){return "<option>"+x+"</option>"}).join("");
+function toast(t){var e=$("#toast");e.textContent=t;e.classList.add("show");setTimeout(function(){e.classList.remove("show")},3200)}
+document.addEventListener("click",function(e){
+var b=e.target.closest("[data-b]"),i=e.target.closest(".ic");
+if(b){$("#dt").textContent="حجز: "+b.dataset.b;$("#dlg").showModal()}
+if(i){location.hash="#consult";$("select").value=i.dataset.s}
+});
+document.addEventListener("keydown",function(e){if(e.key==="Enter"&&e.target.classList.contains("ic"))e.target.click()});
+$("#cx").onclick=function(){$("#dlg").close()};
+document.querySelectorAll("form").forEach(function(f){f.addEventListener("submit",function(e){
+e.preventDefault();var ok=true;
+f.querySelectorAll("[required]").forEach(function(i){
+var er=i.closest("label").nextElementSibling,v=i.value.trim(),m="";
+if(!v)m="الحقل ده مطلوب";
+else if(i.name==="p"&&i.inputMode==="tel"&&!/^(\+?966|00966|0)?5[0-9]{8}$/.test(v.replace(/\s/g,"")))m="اكتب رقم جوال سعودي صحيح (مثال: 0567563473)";
+if(er&&er.classList.contains("err"))er.textContent=m;
+if(m)ok=false});
+if(ok){gtag("event","conversion",{send_to:"AW-XXXXXXXXXX/FORM_LABEL"});f.reset();if(f.id==="bf")$("#dlg").close();toast(f.dataset.ok)}
+})});
+$("#burger").onclick=function(){$("#nav").classList.toggle("open")};
+$("#nav").onclick=function(){$("#nav").classList.remove("open")};
+var k=0,t;
+function show(n){k=n;var r=R[n];$("#rev").innerHTML='<div class="av">'+r[0]+'</div><b>'+r[1]+'</b><div class="st">★★★★★</div><p style="margin-top:10px">'+r[2]+'</p>';
+$("#dots").innerHTML=R.map(function(_,i){return '<button aria-label="رأي '+(i+1)+'" class="'+(i===n?"on":"")+'" data-r="'+i+'"></button>'}).join("")}
+$("#dots").onclick=function(e){var d=e.target.dataset.r;if(d!==undefined){show(+d);clearInterval(t)}};
+show(0);t=setInterval(function(){show((k+1)%R.length)},6000);
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;io.unobserve(e.target);var n=+e.target.dataset.n,c=0,s=Math.ceil(n/50);var h=setInterval(function(){c=Math.min(n,c+s);e.target.textContent=c.toLocaleString("ar-EG")+"+";if(c>=n)clearInterval(h)},30)})});
+document.querySelectorAll("[data-n]").forEach(function(x){io.observe(x)});
+</script>
+<script>
+/* Google Ads conversions: replace each LABEL with the one from your conversion action */
+document.addEventListener("click",function(e){
+var a=e.target.closest('a[href^="tel:"],a[href*="wa.me"]');
+if(!a)return;
+var call=a.getAttribute("href").indexOf("tel:")===0;
+gtag("event","conversion",{send_to:call?"AW-XXXXXXXXXX/CALL_LABEL":"AW-XXXXXXXXXX/WHATSAPP_LABEL"});
+});
+</script>
+</body>
+</html>
